@@ -29,7 +29,7 @@ public class RedisController {
         //redisTemplate.opsForZSet();//操作ZSet
         //redisTemplate.opsForHash();//操作Map
 
-        redisTemplate.opsForValue().set("username","jack");
+        redisTemplate.opsForValue().set("username","tom");
         String username = (String) redisTemplate.opsForValue().get("username");
 
         System.out.println(username);
